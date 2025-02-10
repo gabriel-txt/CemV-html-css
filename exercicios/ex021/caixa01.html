@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caixas</title>
+    <style>
+        h1 {
+            background-image: linear-gradient(45deg,black, blue);
+            border: 2px solid gray;
+            height: 100px;
+            width: 300px;
+            text-align: center;
+            text-decoration: underline;
+            
+        }
+
+        p {
+            background-color: rgba(255, 127, 80, 0.726);
+            color: aliceblue;
+            border: 2px solid gray;
+            text-align: center;
+            width: 500px;
+        }
+
+        a {
+            background-color: darkred;
+            color: aliceblue;
+            margin: 0 20px 0 20px;
+            border: 2px solid gray;
+            text-decoration: none;
+        }
+
+        #id:hover {
+            background-color: red;
+        }
+        #id:active {
+            background-color: blue;
+        }
+        h1:active {
+            background-color: blue;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Site de caixas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti sunt excepturi nesciunt natus illo odio iste atque maxime optio temporibus nostrum dicta ipsum est labore quaerat voluptas, nisi nam!</p>
+    <h1>Headings são box-levels</h1>
+    <p id="id">Parágrafos são box-level</p>
+    <p>Mas um <a href="">link dentro de um parágrafo</a> por exemplo, é um inline-level</p>
+    
     
 </body>
 </html>
